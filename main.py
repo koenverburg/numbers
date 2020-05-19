@@ -16,3 +16,8 @@ if browser.find_element_by_id('password'):
 
     form = browser.find_element_by_xpath('/html/body/div[3]/main/div/form')
     form.submit()
+
+
+browser.get(
+    'https://github.com/{0}?tab=repositories'.format(os.environ['GITHUB_USERNAME']))
+
