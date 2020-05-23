@@ -21,3 +21,5 @@ if browser.find_element_by_id('password'):
 browser.get(
     'https://github.com/{0}?tab=repositories'.format(os.environ['GITHUB_USERNAME']))
 
+raw_repos = browser.find_elements_by_class_name('py-4')
+print(raw_repos)
